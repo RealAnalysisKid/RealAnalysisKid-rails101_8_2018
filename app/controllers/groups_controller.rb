@@ -42,6 +42,14 @@ class GroupsController < ApplicationController
       redirect_to groups_path, alert: "Group Deleted"
   end
 
+  def join
+    @group =
+  end
+
+  def quit
+
+  end
+
   private
 
   def find_group_and_check_permission
